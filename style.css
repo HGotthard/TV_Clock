@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/res/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.clockbox {
+    width: 280px;
+    box-sizing: border-box;
+    padding: 5px 40px;
+    float: left;
+}
+
+.timetable {
+    width: 161px;
+    padding: 5px 40px 0px 0px;
+}
+
+.header {
+    width: 481px;
+    background: rgba(32, 30, 71, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 20px;
+}
+
+.timetable p {
+    margin: 0;
+    padding: 10px 0px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.clockbox p {
+    margin: 0;
+    padding: 10px 0px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.clockbox input {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.clockbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 90px;
+    color: #fff;
+    font-size: 16px;
+    background: #0c4282;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.clockbox input[type="submit"]:hover {
+    color: #fff;
+    background: #235590;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.884)
+}
+
+.clockbox input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+td {
+    border: 1px solid #ddd;
+    text-align: left;
+    background: #0c4282
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+}
+
+td:nth-child(even) {
+    background-color: #235590;
+}
+
+.deleteall {
+    width: 184px !important;
+}

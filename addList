@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in {1..73}
+do
+	echo a /home/pi/Music/$i.mp3 > /var/run/omxctl
+done
