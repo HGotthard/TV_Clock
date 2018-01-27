@@ -7,7 +7,21 @@
    <div class="header">
       <div class="clockbox">
          <form action="index.php" method="post">
+             
             <p>TV Control:</p>
+            <div class="status">
+            
+            <?php
+                $status = exec('echo pow 0 | cec-client -d 1 -s');
+                if($status == "power status: standby"){
+                    echo '<div class="offline"></div>'.'Status: <span class="offtext">Offline</span>';
+                }else{
+                   echo '<div class="online"></div>'.'Status: <span class="ontext">Online</span>';
+                }    
+               
+                
+            ?>
+            </div>
             <input formaction="action.php?action=1" type="submit" value="TV an">
             <input formaction="action.php?action=2" type="submit" value="TV aus">
             <p>Musik Control:</p>
@@ -83,7 +97,7 @@
                 $i     = $i + 1;
                 $date  = new DateTime($row["ts"]);
                 $datum = $date->format('d.m.Y H:i:s');
-                echo "<tr><td>" . $datum . "</td></tr>";
+                echo "<tr><td>". $datum ."</td></tr>";
             }
             if ($i == 0) {
                 echo "<tr><td>empty</td></tr>";

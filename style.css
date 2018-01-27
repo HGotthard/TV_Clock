@@ -106,3 +106,33 @@ td:nth-child(even) {
 .deleteall {
     width: 184px !important;
 }
+
+.status {
+    line-height: 32px;
+}
+
+.offline {
+    background: url(/res/off.png);
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-right: 33%;
+}
+
+.online {
+    background: url(/res/on.png);
+    width: 32px;
+    height: 32px;
+    float: right;
+    margin-right: 33%;
+}
+
+.offtext {
+    color: red;
+    text-shadow: 2px 2px 5px red;
+}
+
+.ontext {
+    color: greenyellow;
+    text-shadow: 2px 2px 5px greenyellow;
+}
