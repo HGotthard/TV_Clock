@@ -2,6 +2,8 @@
 <head>
    <title>Wecker Main Page</title>
    <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="icon" href="/res/favicon.png">
+   <meta name="viewport" content="width=device-width, height=device-heigt, initial-scale=0.73, user-scalable=no" >
 </head>
 <body>
    <div class="header">
